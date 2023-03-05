@@ -1,0 +1,108 @@
+.main-logo{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    margin: 26px 0 16px 0;
+}
+.main-filters{
+    position: relative;
+}
+.global-location-filter{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    color: rgba(0, 0, 0, 0.5);
+    padding: 18px 14px;
+    width: 326px;
+    height: 56px;
+    border-radius: 9px;
+    border-color: #00000099
+}
+
+.big-global-filter{
+    width: 326px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    color: rgba(0, 0, 0, 0.5);
+    padding: 18px 14px;
+    height: 56px;
+    border-radius: 9px;
+    border: 1px grey solid;
+
+}
+.big-location-filter::before{
+    position: absolute;
+    top: 15px;
+    left: 95px;
+    right: 0;
+    bottom: 1px;
+    content: '';
+    background: url('../img/Lupa-icon.png');
+    background-size: 24px 24px;
+    width: 24px;
+    height: 24px;
+}
+.location-filter:nth-child(n)::after{
+    background: url('../img/arrow-drop-down.png');
+    content: '';
+    position: absolute;
+    top: 15px;
+    right: 0;
+    left: 630px;
+    bottom: 0;
+    width: 24px;
+    height: 24px;
+}
+.location-filter:nth-child(2n)::after{
+    background: url('../img/arrow-drop-down.png');
+    content: '';
+    position: absolute;
+    top: 15px;
+    right: 0;
+    left: 895px;
+    bottom: 0;
+    width: 24px;
+    height: 24px;
+}
+
+
+.button-holder{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.tablet-text{
+    padding: 38px 16px;
+}
+
+.tablet-text__name{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 30px;
+    text-align: center;
+    letter-spacing: 0.15px;
+    color: rgba(0, 0, 0, 0.87);
+}
+.tablet-text__type{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+    text-align: center;
+    letter-spacing: 0.25px;
+    color: rgba(0, 0, 0, 0.6);
+}
+.col-3 .tablet:nth-child(2){
+    margin: 24px 0;
+}
+.main-container.locations{
+    height: 904px;
+}

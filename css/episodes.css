@@ -1,0 +1,63 @@
+.series-text{
+    padding: 25px 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.series-text__name{
+    width: 208px;
+    height: 30px;
+    font-family: 'Roboto';
+    font-style: normal;
+    text-align: center;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 30px;
+}
+.series-text__date{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+    text-align: center;
+    letter-spacing: 0.25px;
+    color: rgba(0, 0, 0, 0.6);
+}
+.series-text__number{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 21px;
+    text-align: center;
+    letter-spacing: 0.25px;
+    color: rgba(0, 0, 0, 0.6);
+}
+
+.series-text{
+    margin: 25px 16px;
+}
+
+.col-3 .tablet:nth-child(2){
+    margin: 24px 0;
+}
+.button-holder{
+    margin-top: 48px;
+}
+.main-container.episodes{
+    height: 904px;
+}
+.big-episodes-filter{
+    width: 500px;
+    height: 56px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    color: rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
+    border: 1px grey solid;
+}

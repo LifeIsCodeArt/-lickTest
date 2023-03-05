@@ -1,0 +1,105 @@
+@import url('characters.css');
+@import url('locations.css');
+@import url('episodes.css');
+
+a{
+    text-decoration: 0;
+}
+.container{
+    padding: 0;
+}
+.main-container{
+    height: 1000px;
+}
+.local-wrapper{
+    width: 1020px;
+    margin: 0 auto;
+}
+.global-wrapper{
+    margin: 0 auto;
+    width: 1440px;
+    background-color: #FFFFFF;
+}
+.header{
+    height: 60px;
+    padding: 0 210px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px #E5E5E5 solid;
+}
+.navigation-menu{
+    display: flex;
+    width: 300px;
+    justify-content: space-between;
+    align-items: center;
+}
+.navigation-item__link{
+    font-family: 'Karla';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 21px;
+    text-align: center;
+    color: #000000;
+}
+.show-button{
+    width: 154px;
+    height: 36px;
+    text-align: center;
+    background-color: #F2F9FE;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    text-align: center;
+    letter-spacing: 1.25px;
+    text-transform: uppercase;
+    color: #2196F3;
+    border: none;
+    box-shadow: 0 1px 10px 0 #A7A1A9;
+}
+.tablet{
+    width: 240px;
+    height: 128px;
+    border-radius: 4px;
+    box-shadow: 0 1px 3px 0 #A7A1A9;
+}
+.main-tablets{
+    margin: 61px 0 48px 0;
+    height: 432px;
+}
+.footer{
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top: 2px #E5E5E5 solid;
+}
+.footer-authors{
+    font-family: 'Karla';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 21px;
+    text-align: center;
+    color: #212121;
+}
+.global-filter{
+    width: 240px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    color: rgba(0, 0, 0, 0.5);
+    padding: 18px 14px;
+    height: 56px;
+    border-radius: 9px;
+    border: 1px grey solid;
+}
+#searchingByName{
+    padding-left: 34px;
+}
+
