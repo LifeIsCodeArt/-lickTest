@@ -1,13 +1,15 @@
 .series-text{
-    padding: 25px 16px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 .series-text__name{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 208px;
-    height: 30px;
+    height: 60px;
     font-family: 'Roboto';
     font-style: normal;
     text-align: center;
@@ -39,7 +41,11 @@
 .series-text{
     margin: 25px 16px;
 }
-
+.tablet.series{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 .col-3 .tablet:nth-child(2){
     margin: 24px 0;
 }
@@ -48,6 +54,18 @@
 }
 .main-container.episodes{
     height: 904px;
+}
+.main-filters{
+    position: relative;
+}
+.episodes-filter::before{
+    background: url('../img/Lupa-icon.png');
+    content: '';
+    position: absolute;
+    top: 15px;
+    left: 275px;
+    width: 24px;
+    height: 24px;
 }
 .big-episodes-filter{
     width: 500px;
@@ -60,4 +78,5 @@
     color: rgba(0, 0, 0, 0.5);
     border-radius: 5px;
     border: 1px grey solid;
+    padding: 16px 16px 16px 48px;
 }

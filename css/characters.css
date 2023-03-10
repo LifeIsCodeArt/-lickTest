@@ -60,12 +60,10 @@
 .card:nth-child(2n){
     margin-top: 24px;
 }
-.card-image{
+
+.picture-card{
+    width: 240px;
     height: 168px;
-}
-.image{
-    height: 100%;
-    width: 100%;
 }
 .card-text{
     height: 76px;

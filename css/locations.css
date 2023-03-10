@@ -77,7 +77,11 @@
     align-items: center;
 }
 .tablet-text{
-    padding: 38px 16px;
+    padding: 23px 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 
 .tablet-text__name{
@@ -85,6 +89,7 @@
     font-style: normal;
     font-weight: 500;
     font-size: 20px;
+    height: 60px;
     line-height: 30px;
     text-align: center;
     letter-spacing: 0.15px;
