@@ -8,18 +8,22 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Karla:wght@700&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="../css/bootstrap.min.css">
     <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
     <link rel="stylesheet" href="../css/style.css">
-    <title>Document</title>
+    <link rel="stylesheet" href="../css/episodes.css">
+    <title>Episodes</title>
 </head>
 <body>
-<div class="global-wrapper">
-    <header class="header">
+<div class="global-wrapper episodes">
+    <header class="header episodes">
         <div class="header-logo">
             <img src="../img/logo-black%201.png" alt="#">
         </div>
-        <nav class="navigation">
+        <div class="header__burger" id="burger">
+            <span class=""></span>
+        </div>
+        <nav class="navigation episodes" id="navigation">
             <ul class="navigation-menu">
                 <li class="navigation-item"><a href="../pages/characters.html" class="navigation-item__link">Characters</a></li>
                 <li class="navigation-item"><a href="../pages/locations.html" class="navigation-item__link">Locations</a></li>
@@ -34,196 +38,33 @@
             </div>
             <div class="main-filters container">
                 <div class="row">
-                    <div class="col-3"></div>
-                    <div class="col-6 global-filter-area episodes-filter"><input type="text" id="episodesNameFilter" class="big-episodes-filter"  placeholder="Filter by name..."></div>
-                    <div class="col-3"><button class="searchButton" id="searchEpisodes">Find</button></div>
+                    <div class="col-3 filters"></div>
+                    <div class="col-6 global-filter-area episodes-filter"><input type="text" id="episodesNameFilter" class="big-episodes-filter name-filter"  placeholder="Filter by name..."></div>
+                    <div class="col-3 filters"></div>
                 </div>
-
                 <div class="main-tablets container">
-                    <div class="row">
-                        <div class="col-3">
-                            <div class="tablet series">
-                                <div class="series-text">
-                                    <div class="series-text__name">
-                                        Pilot
-                                    </div>
-                                    <div class="series-text__date">
-                                        December 2, 2013
-                                    </div>
-                                    <div class="series-text__number">
-                                        SE01E01
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="tablet series">
-                                <div class="series-text">
-                                    <div class="series-text__name">
-                                        Pilot
-                                    </div>
-                                    <div class="series-text__date">
-                                        December 2, 2013
-                                    </div>
-                                    <div class="series-text__number">
-                                        SE01E01
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="tablet series">
-                                <div class="series-text">
-                                    <div class="series-text__name">
-                                        Pilot
-                                    </div>
-                                    <div class="series-text__date">
-                                        December 2, 2013
-                                    </div>
-                                    <div class="series-text__number">
-                                        SE01E01
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-3">
-                            <div class="tablet series">
-                                <div class="series-text">
-                                    <div class="series-text__name">
-                                        Pilot
-                                    </div>
-                                    <div class="series-text__date">
-                                        December 2, 2013
-                                    </div>
-                                    <div class="series-text__number">
-                                        SE01E01
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="tablet series">
-                                <div class="series-text">
-                                    <div class="series-text__name">
-                                        Pilot
-                                    </div>
-                                    <div class="series-text__date">
-                                        December 2, 2013
-                                    </div>
-                                    <div class="series-text__number">
-                                        SE01E01
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="tablet series">
-                                <div class="series-text">
-                                    <div class="series-text__name">
-                                        Pilot
-                                    </div>
-                                    <div class="series-text__date">
-                                        December 2, 2013
-                                    </div>
-                                    <div class="series-text__number">
-                                        SE01E01
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-3">
-                            <div class="tablet series">
-                                <div class="series-text">
-                                    <div class="series-text__name">
-                                        Pilot
-                                    </div>
-                                    <div class="series-text__date">
-                                        December 2, 2013
-                                    </div>
-                                    <div class="series-text__number">
-                                        SE01E01
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="tablet series">
-                                <div class="series-text">
-                                    <div class="series-text__name">
-                                        Pilot
-                                    </div>
-                                    <div class="series-text__date">
-                                        December 2, 2013
-                                    </div>
-                                    <div class="series-text__number">
-                                        SE01E01
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="tablet series">
-                                <div class="series-text">
-                                    <div class="series-text__name">
-                                        Pilot
-                                    </div>
-                                    <div class="series-text__date">
-                                        December 2, 2013
-                                    </div>
-                                    <div class="series-text__number">
-                                        SE01E01
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-3">
-                            <div class="tablet series">
-                                <div class="series-text">
-                                    <div class="series-text__name">
-                                        Pilot
-                                    </div>
-                                    <div class="series-text__date">
-                                        December 2, 2013
-                                    </div>
-                                    <div class="series-text__number">
-                                        SE01E01
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="tablet series">
-                                <div class="series-text">
-                                    <div class="series-text__name">
-                                        Pilot
-                                    </div>
-                                    <div class="series-text__date">
-                                        December 2, 2013
-                                    </div>
-                                    <div class="series-text__number">
-                                        SE01E01
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="tablet series">
-                                <div class="series-text">
-                                    <div class="series-text__name">
-                                        Pilot
-                                    </div>
-                                    <div class="series-text__date">
-                                        December 2, 2013
-                                    </div>
-                                    <div class="series-text__number">
-                                        SE01E01
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                    <div class="row"  id="mainTablet">
                     </div>
                 </div>
-                <div class="button-holder episodes">
-                    <button class="show-button" id="showButton">
-                        Show More
-                    </button>
-                </div>
-                <ul>
 
-                </ul>
+
+                <div class="button-area">
+                    <button class="btn" id="prevButton">Prev</button>
+                    <div class="pagination">
+                        <ul class="pagination-list" id="pagination">
+                        </ul>
+                    </div>
+                    <button class="btn" id="nextButton">Next</button>
+                </div>
             </div>
         </div>
     </div>
-    <footer class="footer">
-        <div class="footer-authors">
-            Make with ❤️  for the Test
-        </div>
-    </footer>
 </div>
-<script src="../js/script.js"></script>
+<footer class="footer">
+    <div class="footer-authors">
+        Make with ❤️  for the Test
+    </div>
+</footer>
+<script src="../js/episode.js"></script>
 </body>
 </html>

@@ -1,0 +1,107 @@
+.picture-card{
+    width: 240px;
+    height: 168px;
+}
+.card-text{
+    height: 76px;
+    padding: 12px 16px;
+}
+.card-text__name{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 30px;
+    letter-spacing: 0.15px;
+    color: rgba(0, 0, 0, 0.87);
+}
+.card-text__type{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+    letter-spacing: 0.25px;
+    color: rgba(0, 0, 0, 0.6);
+}
+.general-info-block{
+    display: flex;
+    height: 259px;
+    margin-top: 30px;
+}
+.comeback{
+    width: 108px;
+    height: 24px;
+    margin-top: 42px;
+    margin-right: 153px;
+}
+.back-icon{
+    padding-bottom: 3px;
+}
+.comeback-text{
+    font-family: 'Karla';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 21px;
+    color: #000000;
+    text-align: center;
+}
+.general-block{
+    height: 117px;
+    padding-top: 35px;
+}
+.general-block-text{
+    display: block;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 42px;
+    color: #081F32;
+    text-align: center;
+}
+.secondary-info-item{
+    width: 200px;
+    height: 44px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.info-item-header{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.15px;
+    color: #081F32;
+    text-align: right;
+}
+.info-item-subtitle{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 0.25px;
+    color: #6E798C;
+    text-align: right;
+}
+.tablets-header{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.15px;
+    color: #8E8E93;
+    margin-bottom: 24px;
+}
+.secondary-info-block{
+    margin-top: 42px;
+    display: flex;
+}
+

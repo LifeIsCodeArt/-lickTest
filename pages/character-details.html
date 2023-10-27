@@ -1,0 +1,155 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Karla:wght@700&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/character-details.css">
+    <title>Character Card</title>
+</head>
+<body>
+<div class="global-wrapper">
+    <header class="header characters">
+        <div class="header-logo">
+            <img src="../img/logo-black%201.png" alt="#">
+        </div>
+        <div class="header__burger" id="burger">
+            <span class=""></span>
+        </div>
+        <nav class="navigation characters">
+            <ul class="navigation-menu">
+                <li class="navigation-item"><a href="../pages/characters.html" class="navigation-item__link">Characters</a></li>
+                <li class="navigation-item"><a href="../pages/locations.html" class="navigation-item__link">Locations</a></li>
+                <li class="navigation-item"><a href="../pages/episodes.html" class="navigation-item__link">Episodes</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="main-container character-details">
+        <div class="local-wrapper">
+            <div class="general-info-block">
+            <div class="comeback ">
+                <img src="../img/arrow_back_24px.png" alt="#" class="back-icon">
+                <span class="comeback-text" onclick="history.go(-1)"> GO BACK </span>
+            </div>
+            <div class="image-block">
+                <img src="../img/Rick.png" alt="#" width="300" height="300" class="character-image" id="mainPhoto">
+                <div class="image-block-text" id="characterName">
+                    Rick Sanchez
+                </div>
+            </div>
+            </div>
+            <div class="secondary-info-block">
+                <div class="information-block">
+                    <div class="common-block-title">
+                        Informations
+                    </div>
+                    <ul class="information-list">
+                        <li class="information-list-item">
+                            <div class="item-text-block">
+                                <div class="item-text-title">
+                                    Gender
+                                </div>
+                                <div class="item-text-subtitle" id="gender">
+                                    Male
+                                </div>
+                            </div>
+                        </li>
+
+                        <li class="information-list-item">
+                            <div class="item-text-block">
+                                <div class="item-text-title">
+                                    Status
+                                </div>
+                                <div class="item-text-subtitle" id="status">
+                                    Alive
+                                </div>
+                            </div>
+                        </li>
+
+                        <li class="information-list-item">
+                            <div class="item-text-block">
+                                <div class="item-text-title">
+                                    Specie
+                                </div>
+                                <div class="item-text-subtitle" id="specie">
+                                    Human
+                                </div>
+                            </div>
+                        </li>
+
+                        <li class="information-list-item">
+                            <div class="item-text-block">
+                                <div class="item-text-title">
+                                    Origin
+                                </div>
+                                <div class="item-text-subtitle" id="origin">
+                                    Earth (C-137)
+                                </div>
+                            </div>
+                        </li>
+
+                        <li class="information-list-item">
+                            <div class="item-text-block">
+                                <div class="item-text-title">
+                                    Type
+                                </div>
+                                <div class="item-text-subtitle" id="type">
+                                    Unknown
+                                </div>
+                            </div>
+                        </li>
+
+                        <li class="information-list-item location-item" >
+                            <a href="location-details.html">
+                                <div class="item-text-block">
+                                    <div class="item-text-title">
+                                        Location
+                                    </div>
+                                    <div class="item-text-subtitle" id="location">
+                                        <a href="location-details.html" target="_blank" class="link-to-location"></a>
+                                            Earth (Replacement Dimension)
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+            </div>
+                <div class="episode-block">
+                    <div class="common-block-title">
+                        Episodes
+                    </div>
+                <ul class="episodes-block" id="episodesArea">
+                    <li class="episodes-list-item">
+                        <div class="item-text-block">
+                            <div class="item-text-title">
+                                S01E01
+                            </div>
+                            <div class="item-text-subtitle">
+                                Pilot
+                            </div>
+                            <div class="item-text-date">
+                                December 2, 2013
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+                </div>
+            </div>
+        </div>
+        <footer class="footer">
+            <div class="footer-authors">
+                Make with ❤️  for the Test
+            </div>
+        </footer>
+    </div>
+</div>
+<script type="module" src="../js/character-details.js"></script>
+</body>
+</html>

@@ -8,169 +8,90 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Karla:wght@700&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="../css/bootstrap.min.css">
     <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
     <link rel="stylesheet" href="../css/style.css">
-    <title>Document</title>
+    <link rel="stylesheet" href="../css/characters.css">
+    <title>Characters</title>
 </head>
 <body>
-<div class="global-wrapper">
-    <header class="header">
-        <div class="header-logo">
+<div class="global-wrapper characters">
+    <header class="header characters">
+        <div class="header-logo characters">
             <img src="../img/logo-black%201.png" alt="#">
         </div>
-        <nav class="navigation">
-            <ul class="navigation-menu">
+        <div class="header__burger" id="burger">
+            <span class=""></span>
+        </div>
+        <nav class="navigation characters" id="navigation">
+            <ul class="navigation-menu characters">
                 <li class="navigation-item"><a href="../pages/characters.html" class="navigation-item__link">Characters</a></li>
                 <li class="navigation-item"><a href="../pages/locations.html" class="navigation-item__link">Locations</a></li>
                 <li class="navigation-item"><a href="../pages/episodes.html" class="navigation-item__link">Episodes</a></li>
             </ul>
         </nav>
     </header>
-    <div class="main-container">
+    <div class="main-container characters">
         <div class="local-wrapper">
             <div class="main-logo">
                 <img src="../img/Rick-N-Morty.png" alt="#">
             </div>
             <div class="main-filters container">
-                <div class="row">
-                    <div class="col-3 global-filter-area character-filter"><input type="text" class="global-filter" id="searchingByName" placeholder="Filter by name..."></div>
-                    <div class="col-3 global-filter-area character-filter"><input type="text" class="global-filter" placeholder="Species"></div>
-                    <div class="col-3 global-filter-area character-filter"><input type="text" class="global-filter" placeholder="Gender"></div>
-                    <div class="col-3 global-filter-area character-filter"><input type="text" class="global-filter" placeholder="Status"></div>
+                <div class="row filters">
+                    <div class="col-3 global-filter-area character-filter"><input type="text" class="global-filter name-filter" id="charactersNameFilter" placeholder="Filter by name..."></div>
+                    <div class="col-3 global-filter-area character-filter">
+                        <select type="text" class="global-filter" id="characterSpecies">
+                        <option value="" selected>Species</option>
+                        <option value="Human">Human</option>
+                        <option value="Alien">Alien</option>
+                        <option value="Humanoid">Humanoid</option>
+                        <option value="Poopybutthole">Poopybutthole</option>
+                        <option value="Mythological Creature">Mythological Creature</option>
+                        <option value="Disease">Disease</option>
+                        <option value="Cronenberg">Cronenberg</option>
+                        <option value="Animal">Animal</option>
+                        <option value="Robot">Robot</option>unknown
+                        <option value="unknown">unknown</option>
+                    </select></div>
+                    <div class="col-3 global-filter-area character-filter">
+                        <select type="text" class="global-filter" id="characterGender">
+                        <option value="" selected>Gender</option>
+                        <option value="Male">Male</option>
+                        <option value="Female">Female</option>
+                        <option value="Genderless">Genderless</option>
+                        <option value="Unknown">Unknown</option>
+                    </select>
+                    </div>
+                    <div class="col-3 global-filter-area character-filter">
+                        <select type="text" class="global-filter" id="characterStatus">
+                        <option value="" selected>Status</option>
+                        <option value="Alive">Alive</option>
+                        <option value="Dead">Dead</option>
+                        <option value="Unknown">Unknown</option>
+                    </select>
+                    </div>
                 </div>
-
-                <div class="main-cards container" id="cardsArea">
-                    <div class="row">
-                        <div class="col-3 card-area">
-                            <div class="card">
-                                <div class="card-image">
-                                    <img src="../img/Rick.png" alt="" class="picture-card">
-                                </div>
-                                <div class="card-text">
-                                    <div class="card-text__name">
-                                        Rick Sanchez
-                                    </div>
-                                    <div class="card-text__type">
-                                        Human
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="card">
-                                <div class="card-image">
-                                    <img src="../img/Rick.png" alt="" class="picture-card">
-                                </div>
-                                <div class="card-text">
-                                    <div class="card-text__name">
-                                        Rick Sanchez
-                                    </div>
-                                    <div class="card-text__type">
-                                        Human
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-3 card-area">
-                            <div class="card">
-                                <div class="card-image">
-                                    <img src="../img/Rick.png" alt="" class="picture-card">
-                                </div>
-                                <div class="card-text">
-                                    <div class="card-text__name">
-                                        Rick Sanchez
-                                    </div>
-                                    <div class="card-text__type">
-                                        Human
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="card">
-                                <div class="card-image">
-                                    <img src="../img/Rick.png" alt="" class="picture-card">
-                                </div>
-                                <div class="card-text">
-                                    <div class="card-text__name">
-                                        Rick Sanchez
-                                    </div>
-                                    <div class="card-text__type">
-                                        Human
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-3 card-area">
-                            <div class="card">
-                                <div class="card-image">
-                                    <img src="../img/Rick.png" alt="" class="picture-card">
-                                </div>
-                                <div class="card-text">
-                                    <div class="card-text__name">
-                                        Rick Sanchez
-                                    </div>
-                                    <div class="card-text__type">
-                                        Human
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="card">
-                                <div class="card-image">
-                                    <img src="../img/Rick.png" alt="" class="picture-card">
-                                </div>
-                                <div class="card-text">
-                                    <div class="card-text__name">
-                                        Rick Sanchez
-                                    </div>
-                                    <div class="card-text__type">
-                                        Human
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-3 card-area">
-                            <div class="card">
-                                <div class="card-image">
-                                    <img src="../img/Rick.png" alt="" class="picture-card">
-                                </div>
-                                <div class="card-text">
-                                    <div class="card-text__name">
-                                        Rick Sanchez
-                                    </div>
-                                    <div class="card-text__type">
-                                        Human
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="card">
-                                <div class="card-image">
-                                    <img src="../img/Rick.png" alt="" class="picture-card">
-                                </div>
-                                <div class="card-text">
-                                    <div class="card-text__name">
-                                        Rick Sanchez
-                                    </div>
-                                    <div class="card-text__type">
-                                        Human
-                                    </div>
-                                </div>
-                            </div>
+                <div class="main-cards container" >
+                    <div class="row" id="cardsArea">
                         </div>
                     </div>
                 </div>
-                <div class="button-holder">
-                    <button class="show-button" id="showButton">
-                        Show More
-                    </button>
-
+            <div class="button-area">
+            <button class="btn" id="prevButton">Prev</button>
+                <div class="pagination">
+                 <ul class="pagination-list" id="pagination">
+                 </ul>
                 </div>
+            <button class="btn" id="nextButton">Next</button>
             </div>
         </div>
     </div>
+</div>
     <footer class="footer">
      <div class="footer-authors">
          Make with ❤️  for the Test
      </div>
     </footer>
-</div>
-<script src="../js/script.js"></script>
+<script src="../js/character.js"></script>
 </body>
 </html>

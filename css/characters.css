@@ -1,14 +1,57 @@
+.header.characters{
+    width: 1440px;
+    position: fixed;
+    margin: 0 auto;
+    top: 0;
+    z-index: 5;
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.global-wrapper.characters{
+    margin: 0 auto;
+    width: 1440px;
+    background-color: #FFFFFF;
+}
+.header:before{
+    content: '';
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    position: absolute;
+    z-index: 3;
+    background-color: #FFFFFF;
+}
 .main-logo{
     display:flex;
     justify-content: center;
     align-items: center;
-    margin: 26px 0 16px 0;
+    margin: 50px 0 16px 0;
+    z-index: 3;
 }
-
+.header__burger{
+    display: none;
+}
+.header__burger.active:before{
+    transform:rotate(45deg);
+    top: 9px;
+    transition: 0.6s ease all;
+}
+.header__burger.active span{
+    transform: scale(0);
+    transition: 0.6s ease all;
+}
+.header__burger.active:after{
+    transition: 0.6s ease all;
+    transform:rotate(-45deg);
+    bottom: 9px;
+}
 .main-filters{
     position: relative;
 }
-
 .character-filter:nth-child(1)::before{
     position: absolute;
     top: 15px;
@@ -21,12 +64,16 @@
     width: 24px;
     height: 24px;
 }
+.global-filter{
+    appearance: none;
+}
 .character-filter:nth-child(2)::after{
     background: url('../img/arrow-drop-down.png');
     content: '';
     position: absolute;
     top: 15px;
     left: 460px;
+    right: 10px;
     width: 24px;
     height: 24px;
 }
@@ -60,7 +107,9 @@
 .card:nth-child(2n){
     margin-top: 24px;
 }
-
+.disabled{
+    pointer-events: none;
+}
 .picture-card{
     width: 240px;
     height: 168px;
@@ -87,8 +136,314 @@
     letter-spacing: 0.25px;
     color: rgba(0, 0, 0, 0.6);
 }
-.button-holder{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.main-container.characters{
+    height: auto;
+}
+
+/*Adaptive for 1439px*/
+
+@media (max-width: 1439px) {
+    .header.characters{
+        width: 100%;
+        position: fixed;
+        top: 0;
+        left: 0;
+        padding: 0 40px;
+    }
+    .global-wrapper.characters{
+        width: 1020px;
+    }
+    .header:before{
+        background-color: #FFFFFF;
+    }
+}
+
+@media (max-width: 1195px) {
+    .character-filter:nth-child(2)::after{
+        background: url('../img/arrow-drop-down.png');
+        content: '';
+        position: absolute;
+        top: 15px;
+        left: 450px;
+        width: 24px;
+        height: 24px;
+    }
+    .character-filter:nth-child(3)::after{
+        background: url('../img/arrow-drop-down.png');
+        content: '';
+        position: absolute;
+        top: 15px;
+        right: 237px;
+        width: 24px;
+        height: 24px;
+    }
+    .character-filter:nth-child(4)::after{
+        background: url('../img/arrow-drop-down.png');
+        content: '';
+        position: absolute;
+        top: 15px;
+        right: -6px;
+        width: 24px;
+        height: 24px;}
+}
+
+@media (max-width: 993px){
+    .local-wrapper{
+        width: 520px;
+    }
+    .main-logo{
+        margin-right: 90px;
+    }
+    .button-area{
+        margin-left: 200px;
+    }
+    #cardsArea.row{
+        width: 100%;
+    }
+    #cardsArea.card:nth-child(2n){
+        padding-left: 550px;
+    }
+    .col-3 {
+        flex: 0 0 auto;
+        width: 50%;
+    }
+    .global-filter{
+        margin-bottom: 15px ;
+    }
+    .character-filter:nth-child(2)::after{
+        background: url('../img/arrow-drop-down.png');
+        content: '';
+        position: absolute;
+        top: 16px;
+        left: 580px;
+        width: 24px;
+        height: 24px;
+    }
+    .character-filter:nth-child(3)::after{
+        background: url('../img/arrow-drop-down.png');
+        content: '';
+        position: absolute;
+        top: 87px;
+        right: 490px;
+        width: 24px;
+        height: 24px;
+    }
+    .character-filter:nth-child(4)::after{
+        background: url('../img/arrow-drop-down.png');
+        content: '';
+        position: absolute;
+        top: 85px;
+        right: 116px;
+        width: 24px;
+        height: 24px;}
+    .global-wrapper.characters{
+        width: 840px;
+    }
+}
+
+@media (max-width: 767px) {
+    .row.filters{
+        flex-direction: column;
+    }
+    .header.characters{
+        padding: 0 10px;
+    }
+    #cardsArea.row{
+        width: 50px;
+        flex-direction: column;
+        align-items: center;
+    }
+    .button-area{
+        display: flex;
+        justify-content: space-between;
+        margin-left: 0;
+        padding-right: 100px;
+    }
+    .header__burger{
+        display: block;
+        position: relative;
+        width: 30px;
+        height: 20px;
+        z-index: 3;
+        transition: 0.6s ease all;
+    }
+    .header__burger:before,
+    .header__burger:after{
+        content: '';
+        background-color: #000000;
+        position: absolute;
+        width: 100%;
+        height: 2px;
+        left: 0;
+        transition: 0.6s ease all;
+    }
+    .header__burger:before{
+        top: 0;
+    }
+    .header__burger:after{
+        bottom: 0;
+    }
+    .header__burger span{
+        background-color: #000000;
+        position: absolute;
+        width: 100%;
+        height: 2px;
+        left: 0;
+        top: 9px;
+        transition: 0.6s ease all;
+    }
+    .navigation.characters{
+        display: block;
+        position: fixed;
+        top: -100%;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: #FFFFFF;
+        transition: 1s ease all;
+    }
+    .navigation.active.characters{
+        top: 0;
+        transition: 0.6s ease all;
+    }
+
+    .navigation-menu.characters{
+        width: 100px;
+        height: 240px;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        margin: 0 auto;
+        padding-top: 90px;
+    }
+    .navigation-item{
+        text-align: left;
+    }
+    .header.characters{
+        height: 50px;
+        padding: 5px 18px 6px 24px
+    }
+    .header-logo{
+        position: relative;
+        z-index: 3;
+    }
+    .header-logo img{
+        max-width: 80%;
+    }
+    .main-logo img{
+        max-width: 312px;
+        max-height: 104px;
+    }
+    .main-logo{
+        min-width: 312px;
+        min-height: 104px;
+        margin: 50px 0 16px 20px;
+    }
+    .character-filter{
+        max-width: 312px;
+        padding-left: 55px;
+    }
+    .main-container.characters{
+        width: 320px;
+        display: flex;
+        justify-content: center;
+        min-height: 5840px;
+        margin: 0 auto;
+    }
+    .card{
+        width: 312px;
+        height: 308px;
+    }
+    .card img{
+        min-width: 312px;
+        min-height: 232px;
+       object-fit: cover;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .link-to-character{
+        display: block;
+        width: 312px;
+    }
+
+    .local-wrapper {
+        min-width: 100%;
+    }
+    .global-wrapper.characters{
+        width: 540px;
+    }
+    .character-filter:nth-child(1)::before{
+        position: absolute;
+        top: 15px;
+        left: 53px;
+        right: 0;
+        bottom: 25px;
+        content: '';
+        background: url('../img/Lupa-icon.png');
+        background-size: 24px 24px;
+        width: 24px;
+        height: 24px;
+    }
+    .character-filter:nth-child(2)::after{
+        background: url('../img/arrow-drop-down.png');
+        content: '';
+        position: absolute;
+        top: 90px;
+        left: 250px;
+        width: 24px;
+        height: 24px;
+    }
+    .character-filter:nth-child(3)::after{
+        background: url('../img/arrow-drop-down.png');
+        content: '';
+        position: absolute;
+        top: 160px;
+        right: 46px;
+        width: 24px;
+        height: 24px;
+    }
+    .character-filter:nth-child(4)::after{
+        background: url('../img/arrow-drop-down.png');
+        content: '';
+        position: absolute;
+        top: 230px;
+        right: 46px;
+        width: 24px;
+        height: 24px;
+    }
+    .button-area{
+        width: 250px;
+        margin-left: 40px;
+    }
+}
+
+@media (max-width: 580px) {
+
+    .global-wrapper.characters{
+        width: 320px;
+    }
+
+    .main-filters.container{
+        width: 320px;
+        margin: 0 auto;
+    }
+    .main-cards.container{
+        width: 320px;
+    }
+    .character-filter{
+       margin-bottom: 0;
+    }
+
+    .row{
+        width: 20px;
+    }
+    .main-container.characters{
+        width: 320px;
+    }
+    .main-logo{
+        min-width: 312px;
+        min-height: 104px;
+        margin: 50px 0 16px 20px;
+    }
 }

@@ -1,15 +1,21 @@
-@import url('characters.css');
-@import url('locations.css');
-@import url('episodes.css');
-
+/*1. сделать главной страницу Characters*/
+/*2. Заадаптивить сайт под экраны*/
+ul,li{
+    margin: 0;
+    padding: 0;
+}
 a{
     text-decoration: 0;
+}
+.header-logo{
+    max-width: 100%;
+    z-index: 3;
 }
 .container{
     padding: 0;
 }
 .main-container{
-    height: 1000px;
+    height: 1800px;
 }
 .local-wrapper{
     width: 1020px;
@@ -32,6 +38,12 @@ a{
     display: flex;
     width: 300px;
     justify-content: space-between;
+    align-items: center;
+    z-index: 3;
+}
+.navigation{
+    display: flex;
+    justify-content: center;
     align-items: center;
 }
 .navigation-item__link{
@@ -94,7 +106,7 @@ a{
     font-size: 16px;
     line-height: 150%;
     color: rgba(0, 0, 0, 0.5);
-    padding: 18px 14px;
+    padding: 18px 18px;
     height: 56px;
     border-radius: 9px;
     border: 1px grey solid;
@@ -102,4 +114,76 @@ a{
 #searchingByName{
     padding-left: 34px;
 }
-
+.name-filter{
+    padding-left: 35px;
+    color: #000000;
+}
+.card-text__name, .tablet-text__name{
+    max-width: 208px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+.button-area{
+    margin: 0 auto 20px auto;
+    width: 500px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.btn{
+    width: 100px;
+    background-color: #4BAABE;
+}
+.btn:hover{
+    background-color: #3770bd;
+    transition: 0.7s ease all;
+}
+.disabled{
+    cursor: no-drop;
+    background-color: grey;
+}
+.link-to-character{
+    z-index: 2;
+    cursor: pointer;
+}
+.card-text:hover{
+    transition:  0.6s ease-in-out;
+    background-color: #c9c950;
+}
+.pagination-list{
+    width: 150px;
+    height: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+}
+.pagination-item{
+    border: none;
+    width: 32px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.pagination-item:hover{
+    border: 4px solid #002F34;
+    border-radius: 23px;
+}
+.pagination-page{
+    font-weight: 400;
+    line-height: 1.5;
+    color: #212529;
+    text-align: center;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.pagination-page:active{
+    color: #FFFFFF;
+}
+.pagination-item:active{
+    background-color: gray;
+}

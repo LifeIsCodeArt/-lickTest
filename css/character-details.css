@@ -1,0 +1,382 @@
+.header.characters{
+    width: 1440px;
+    position: fixed;
+    margin: 0 auto;
+    top: 0;
+    z-index: 5;
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header:before{
+    content: '';
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    position: absolute;
+    z-index: 3;
+    background-color: #FFFFFF;
+}
+.main-logo{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    margin: 150px 0 16px 0;
+    z-index: 3;
+}
+.header__burger{
+    display: none;
+}
+.header__burger.active:before{
+    transform:rotate(45deg);
+    top: 9px;
+    transition: 0.6s ease all;
+}
+.header__burger.active span{
+    transform: scale(0);
+    transition: 0.6s ease all;
+}
+.header__burger.active:after{
+    transition: 0.6s ease all;
+    transform:rotate(-45deg);
+    bottom: 9px;
+}
+.character-details{
+    height: 904px;
+    margin: 0 auto;
+}
+.general-info-block{
+    display: flex;
+    height: 382px;
+}
+.comeback{
+    width: 108px;
+    height: 24px;
+    margin-top: 72px;
+    margin-right: 240px;
+}
+.comeback-text{
+    font-family: 'Karla';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 21px;
+    color: #000000;
+}
+.back-icon{
+    padding-bottom: 3px;
+}
+.image-block{
+    margin-top: 66px;
+    display: flex;
+    flex-direction: column;
+}
+.character-image{
+    border-radius: 50%;
+}
+.information-list{
+    width: 413px;
+    position: static;
+}
+.information-list-item{
+    height: 64px;
+    border-bottom: 2px rgba(229, 229, 229, 0.6) solid;
+    padding: 9px 16px 12px 16px;
+}
+.information-list-item.location-item{
+    position: relative;
+}
+.information-list-item.location-item::after{
+    content: url("../img/gray-right-arrow.png");
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    top: 20px;
+    left: 370px;
+}
+.image-block-text{
+    margin-top: 16px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 56px;
+    text-align: center;
+    color: #081F32;
+}
+.item-text-title{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.15px;
+    color: #081F32;
+}
+.item-text-subtitle{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 0.25px;
+    color: #6E798C;
+}
+.item-text-date{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 10px;
+    line-height: 16px;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    color: #8E8E93;
+    margin-top: 3px;
+}
+.information-block{
+    margin: 0 30px 0 54px;
+    width: 413px;
+}
+.local-wrapper{
+    min-height: 1300px
+}
+.episode-block{
+    display: flex;
+    flex-direction: column;
+    width: 413px;
+}
+
+.episodes-list-item{
+    position: relative;
+    height: 88px;
+    padding: 9px 16px 12px 16px;
+    border-bottom: 2px rgba(229, 229, 229, 0.6) solid;
+}
+.episodes-list-item::after{
+    content: url("../img/gray-right-arrow.png");
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    top: 35px;
+    right: 10px;
+    bottom: 0;
+}
+.common-block-title{
+    height: 24px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+    display: flex;
+    letter-spacing: 0.15px;
+    color: #8E8E93;
+    margin-bottom: 36px;
+}
+.secondary-info-block{
+    margin-top: 72px;
+    display: flex;
+}
+.main-container.character-details{
+    height: 1340px;
+}
+
+@media (max-width: 1439px){
+    .header.characters{
+        width: 100%;
+        position: fixed;
+        top: 0;
+        left: 0;
+        padding: 0 40px;
+    }
+    .header:before{
+        background-color: #FFFFFF;
+    }
+}
+@media (max-width: 1195px){
+    .episodes-list-item{
+        width: 280px;
+    }
+    .information-list-item{
+        width: 280px;
+    }
+    .episodes-list-item::after{
+        content: url("../img/gray-right-arrow.png");
+        position: absolute;
+        width: 24px;
+        height: 24px;
+        top: 35px;
+
+
+        bottom: 0;
+    }
+}
+@media (max-width: 993px){
+    .comeback{
+        margin-top: 202px;
+        margin-right: 80px;
+    }
+    .episodes-list-item{
+        width: 180px;
+    }
+    .information-list-item{
+        width: 180px;
+    }
+    .secondary-info-block{
+        margin-right: 350px;
+    }
+    .episodes-list-item::after{
+        content: none;
+        position: absolute;
+        width: 24px;
+        height: 24px;
+        top: 35px;
+        bottom: 0;
+
+    }
+    .item-text-subtitle{
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        max-width: 128px
+    }
+}
+@media (max-width: 767px){
+    .header.characters{
+        padding: 0 10px;
+    }
+    .header__burger{
+        display: block;
+        position: relative;
+        width: 30px;
+        height: 20px;
+        z-index: 3;
+        transition: 0.6s ease all;
+    }
+    .header__burger:before,
+    .header__burger:after{
+        content: '';
+        background-color: #000000;
+        position: absolute;
+        width: 100%;
+        height: 2px;
+        left: 0;
+        transition: 0.6s ease all;
+    }
+    .header__burger:before{
+        top: 0;
+    }
+    .header__burger:after{
+        bottom: 0;
+    }
+    .header__burger span{
+        background-color: #000000;
+        position: absolute;
+        width: 100%;
+        height: 2px;
+        left: 0;
+        top: 9px;
+        transition: 0.6s ease all;
+    }
+    .header.characters{
+        height: 50px;
+        padding: 5px 18px 6px 24px
+    }
+    .header-logo{
+        position: relative;
+        z-index: 3;
+    }
+    .header-logo img{
+        max-width: 80%;
+    }
+    .main-logo img{
+        max-width: 312px;
+        max-height: 104px;
+    }
+    .main-logo{
+        min-width: 312px;
+        min-height: 104px;
+        margin: 50px 0 16px 20px;
+    }
+    .information-list-item{
+        height: 64px;
+    }
+    .navigation.characters{
+        display: block;
+        position: fixed;
+        top: -100%;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: #FFFFFF;
+        transition: 1s ease all;
+    }
+    .navigation.active.characters{
+        top: 0;
+        transition: 0.6s ease all;
+    }
+
+    .navigation-menu.characters{
+        width: 100px;
+        height: 240px;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        margin: 0 auto;
+        padding-top: 90px;
+    }
+    .navigation-item{
+        text-align: left;
+    }
+}
+@media (max-width: 580px){
+    .main-logo{
+        min-width: 312px;
+        min-height: 104px;
+        margin: 50px 0 16px 20px;
+    }
+    .image-block{
+        margin-right: 100px;
+    }
+    .comeback-text{
+        display: none;
+    }
+
+    .global-wrapper{
+        width: auto;
+    }
+    .secondary-info-block{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .information-block{
+        padding-left: 50px;
+        margin-bottom: 50px;
+    }
+    .information-list-item{
+        height: 80px;
+    }
+    .episode-block {
+        padding-left: 105px;
+    }
+    .episodes-list-item{
+        margin-bottom: 40px;
+    }
+    .local-wrapper{
+        width: 320px;
+    }
+    .image-block img{
+        width: 180px;
+        height: 180px;
+    }
+    .image-block-text{
+        font-size: 27px;
+        margin-top: 0;
+    }
+    .general-info-block {
+        height: 272px;
+    }
+}

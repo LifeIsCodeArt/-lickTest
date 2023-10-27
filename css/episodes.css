@@ -1,3 +1,28 @@
+.header.episodes{
+    width: 1440px;
+    position: fixed;
+    margin: 0 auto;
+    top: 0;
+    z-index: 5;
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.main-tablets{
+    height: auto;
+    margin: 61px 0 48px 0;
+}
+.header:before{
+    content: '';
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    position: absolute;
+    z-index: 3;
+    background-color: #FFFFFF;
+}
 .series-text{
     display: flex;
     flex-direction: column;
@@ -37,7 +62,6 @@
     letter-spacing: 0.25px;
     color: rgba(0, 0, 0, 0.6);
 }
-
 .series-text{
     margin: 25px 16px;
 }
@@ -45,6 +69,16 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    color: #000000;
+}
+.tablet.series:hover{
+    transition:  0.6s ease-in-out;
+    background-color: #c9c950;
+    color: #2b49e2;
+}
+.link-to-episode{
+    z-index: 3;
+    cursor: pointer;
 }
 .col-3 .tablet:nth-child(2){
     margin: 24px 0;
@@ -53,8 +87,9 @@
     margin-top: 48px;
 }
 .main-container.episodes{
-    height: 904px;
+    height: auto;
 }
+
 .main-filters{
     position: relative;
 }
@@ -79,4 +114,237 @@
     border-radius: 5px;
     border: 1px grey solid;
     padding: 16px 16px 16px 48px;
+}
+.main-logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 60px 0 16px 30px
+}
+.header__burger{
+    display: none;
+}
+.header__burger.active:before{
+    transform:rotate(45deg);
+    top: 9px;
+    transition: 0.6s ease all;
+}
+.header__burger.active span{
+    transform: scale(0);
+    transition: 0.6s ease all;
+}
+.header__burger.active:after{
+    transition: 0.6s ease all;
+    transform:rotate(-45deg);
+    bottom: 9px;
+}
+
+@media (max-width: 1439px) {
+    .header.episodes{
+        width: 100%;
+        position: fixed;
+        top: 0;
+        left: 0;
+        padding: 0 40px;
+    }
+
+    .global-wrapper.episodes{
+        width: 1020px;
+        height: auto;
+    }
+    .header:before{
+        background-color: #FFFFFF;
+    }
+}
+@media (max-width: 993px){
+    .col-3 {
+        flex: 0 0 auto;
+        width: 50%;
+    }
+    .main-tablets{
+        margin-left: 0;
+    }
+    .button-area{
+        margin: 50px 0 20px 50px
+    }
+    .main-logo{
+        display: block;
+        margin: 60px 0 16px 315px;
+    }
+    .main-filters.episodes-filter{
+        margin-right: 10px;
+    }
+    .main-filters .col-3.filters{
+        width: 1%;
+    }
+}
+@media (max-width: 767px) {
+    .header__burger {
+        display: block;
+        position: relative;
+        width: 30px;
+        height: 20px;
+        z-index: 3;
+        transition: 0.6s ease all;
+    }
+    .main-logo{
+
+        margin: 60px 0 16px 200px;
+    }
+    .navigation{
+        display: block;
+        position: fixed;
+        top: -100%;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: #FFFFFF;
+        transition: 1s ease all;
+    }
+    .episodes-filter{
+        margin-right: 150px;
+    }
+    .episodes-filter::before{
+        position: absolute;
+        top: 15px;
+        left: 40px;
+        right: 0;
+        bottom: 1px;
+        content: '';
+        background: url('../img/Lupa-icon.png');
+        background-size: 24px 24px;
+        width: 24px;
+        height: 24px;
+    }
+    .local-wrapper{
+        min-width: 100%;
+    }
+    .header__burger:before,
+    .header__burger:after{
+        content: '';
+        background-color: #000000;
+        position: absolute;
+        width: 100%;
+        height: 2px;
+        left: 0;
+        transition: 0.6s ease all;
+    }
+    .col-3.global-filter-area{
+        margin: 0 0 15px 60px;
+    }
+    .col-4 .global-filter-area{
+        margin: 0 0 15px 160px;
+    }
+    .col-4 {
+        width: 100%;
+    }
+
+    .header__burger:before{
+        top: 0;
+    }
+    .header__burger:after{
+        bottom: 0;
+    }
+    .header__burger span{
+        background-color: #000000;
+        position: absolute;
+        width: 100%;
+        height: 2px;
+        left: 0;
+        top: 9px;
+        transition: 0.6s ease all;
+    }
+    .navigation.episodes{
+        display: block;
+        position: fixed;
+        top: -100%;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: #FFFFFF;
+        transition: 1s ease all;
+    }
+    .button-area{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 500px;
+        margin: 50px 0 20px 0;
+    }
+    .main-filters.container{
+        margin-left: 70px;
+    }
+}
+@media (max-width: 580px) {
+
+    .global-wrapper.episodes {
+        width: 320px;
+        height: auto;
+    }
+    .main-tablets {
+        margin-left: 0;
+    }
+    .col-3, .col-4 {
+        margin-left: 60px;
+    }
+
+    .main-filters.container {
+        width: 320px;
+        margin: 0 auto;
+    }
+
+    .main-cards.container {
+        width: 320px;
+    }
+
+    .character-filter {
+        margin-bottom: 0;
+    }
+
+    .local-wrapper {
+        width: 320px;
+    }
+
+    .row {
+        width: 20px;
+    }
+
+    .main-tablets {
+        width: 320px;
+    }
+
+    .global-filter-area {
+        margin-bottom: 15px;
+    }
+
+    .big-episodes-filter {
+        width: 240px;
+        margin-left: 60px;
+    }
+
+    .main-logo {
+        min-width: 312px;
+        min-height: 104px;
+        margin: 60px 0 16px 50px
+    }
+
+    .button-area {
+        margin-left: 20px;
+        width: 230px;
+    }
+    .pagination{
+        margin: 0 15px;
+    }
+    .episodes-filter::before{
+        position: absolute;
+        top: 15px;
+        left: 80px;
+        right: 0;
+        bottom: 1px;
+        content: '';
+        background: url('../img/Lupa-icon.png');
+        background-size: 24px 24px;
+        width: 24px;
+        height: 24px;
+    }
 }

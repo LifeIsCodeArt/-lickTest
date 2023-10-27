@@ -8,18 +8,22 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Karla:wght@700&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="../css/bootstrap.min.css">
     <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
     <link rel="stylesheet" href="../css/style.css">
-    <title>Document</title>
+    <link rel="stylesheet" href="../css/locations.css">
+    <title>Locations</title>
 </head>
 <body>
-<div class="global-wrapper">
-    <header class="header">
+<div class="global-wrapper location">
+    <header class="header location">
         <div class="header-logo">
             <img src="../img/logo-black%201.png" alt="#">
         </div>
-        <nav class="navigation">
+        <div class="header__burger" id="burger">
+            <span class=""></span>
+        </div>
+        <nav class="navigation location" id="navigation">
             <ul class="navigation-menu">
                 <li class="navigation-item"><a href="../pages/characters.html" class="navigation-item__link">Characters</a></li>
                 <li class="navigation-item"><a href="../pages/locations.html" class="navigation-item__link">Locations</a></li>
@@ -27,166 +31,65 @@
             </ul>
         </nav>
     </header>
-    <div class="main-container locations">
+    <div class="main-container location">
         <div class="local-wrapper">
             <div class="main-logo">
                 <img src="../img/Sphere.png" alt="#">
             </div>
             <div class="main-filters container">
-                <div class="row">
+                <div class="row" id="locationSectionSearch">
                     <div class="col-1"></div>
-                    <div class="col-4 global-filter-area big-location-filter"><input type="text" class="big-global-filter" id="searchingByName" placeholder="Filter by name..."></div>
-                    <div class="col-3 global-filter-area location-filter"><input type="text" class="global-filter" placeholder="Type"></div>
-                    <div class="col-3 global-filter-area location-filter"><input type="text" class="global-filter" placeholder="Dimension"></div>
+                    <div class="col-4 global-filter-area big-location-filter"><input type="text" class="big-global-filter name-filter" id="locationsNameFilter" placeholder="Filter by name..."></div>
+                    <div class="col-3 global-filter-area location-filter">
+                        <select type="text" class="global-filter" id="planetType">
+                            <option value="" selected>Type</option>
+                            <option value="Planet">Planet</option>
+                            <option value="Cluster">Cluster</option>
+                            <option value="SpaceStation">Space station</option>
+                            <option value="Microverse">Microverse</option>
+                            <option value="TV">TV</option>
+                            <option value="Resort">Resort</option>
+                            <option value="FantasyTown">Fantasy town</option>
+                            <option value="Dream">Dream</option>
+                        </select>
+                    </div>
+                    <div class="col-3 global-filter-area location-filter">
+                        <select type="text" class="global-filter" id="dimensionSearch">
+                            <option value="" selected>Dimension</option>
+                            <option value="Dimension C-137">Dimension C-137</option>
+                            <option value="Dimension 5-126">Dimension 5-126</option>
+                            <option value="Post-Apocalyptic Dimension">Post-Apocalyptic Dimension</option>
+                            <option value="Replacement Dimension">Replacement Dimension</option>
+                            <option value="Cronenberg Dimension">Cronenberg Dimension</option>
+                            <option value="Fantasy Dimension">Fantasy Dimension</option>
+                            <option value="Replacement Dimension">Replacement Dimension</option>
+                            <option value="unknown">Unknown</option>
+                        </select>
+                    </div>
                     <div class="col-1"></div>
                 </div>
             </div>
-                <div class="main-tablets container">
-                    <div class="row">
-                        <div class="col-3">
-                            <div class="tablet bio">
-                                <div class="tablet-text">
-                                    <div class="tablet-text__name">
-                                        Earth (C-137)
-                                    </div>
-                                    <div class="tablet-text__type">
-                                        Planet
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="tablet bio">
-                                <div class="tablet-text">
-                                    <div class="tablet-text__name">
-                                        Earth (C-137)
-                                    </div>
-                                    <div class="tablet-text__type">
-                                        Planet
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="tablet bio">
-                                <div class="tablet-text">
-                                    <div class="tablet-text__name">
-                                        Earth (C-137)
-                                    </div>
-                                    <div class="tablet-text__type">
-                                        Planet
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-3">
-                            <div class="tablet bio">
-                                <div class="tablet-text">
-                                    <div class="tablet-text__name">
-                                        Earth (C-137)
-                                    </div>
-                                    <div class="tablet-text__type">
-                                        Planet
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="tablet bio">
-                                <div class="tablet-text">
-                                    <div class="tablet-text__name">
-                                        Earth (C-137)
-                                    </div>
-                                    <div class="tablet-text__type">
-                                        Planet
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="tablet bio">
-                                <div class="tablet-text">
-                                    <div class="tablet-text__name">
-                                        Earth (C-137)
-                                    </div>
-                                    <div class="tablet-text__type">
-                                        Planet
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-3">
-                            <div class="tablet bio">
-                                <div class="tablet-text">
-                                    <div class="tablet-text__name">
-                                        Earth (C-137)
-                                    </div>
-                                    <div class="tablet-text__type">
-                                        Planet
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="tablet bio">
-                                <div class="tablet-text">
-                                    <div class="tablet-text__name">
-                                        Earth (C-137)
-                                    </div>
-                                    <div class="tablet-text__type">
-                                        Planet
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="tablet bio">
-                                <div class="tablet-text">
-                                    <div class="tablet-text__name">
-                                        Earth (C-137)
-                                    </div>
-                                    <div class="tablet-text__type">
-                                        Planet
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-3">
-                            <div class="tablet bio">
-                                <div class="tablet-text">
-                                    <div class="tablet-text__name">
-                                        Earth (C-137)
-                                    </div>
-                                    <div class="tablet-text__type">
-                                        Planet
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="tablet bio">
-                                <div class="tablet-text">
-                                    <div class="tablet-text__name">
-                                        Rick Sanchez
-                                    </div>
-                                    <div class="tablet-text__type">
-                                        Planet
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="tablet bio">
-                                <div class="tablet-text">
-                                    <div class="tablet-text__name">
-                                        Earth (C-137)
-                                    </div>
-                                    <div class="tablet-text__type">
-                                        Planet
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+            <div class="main-tablets container">
+                <div class="row" id="tabletArea">
                     </div>
+    <div class="button-area">
+        <button class="btn" id="prevButton">Prev</button>
+        <div class="pagination">
+            <ul class="pagination-list" id="pagination">
+            </ul>
+        </div>
+        <button class="btn" id="nextButton">Next</button>
                 </div>
-                <div class="button-holder">
-                    <button class="show-button" id="showButton">
-                        Show More
-                    </button>
-                </div>
-
+            </div>
         </div>
     </div>
-    <footer class="footer">
-        <div class="footer-authors">
-            Make with ❤️  for the Test
-        </div>
-    </footer>
 </div>
-<script src="../js/script.js"></script>
+<footer class="footer">
+    <div class="footer-authors">
+        Make with ❤️  for the Test
+    </div>
+</footer>
+</div>
+<script src="../js/location.js"></script>
 </body>
 </html>
